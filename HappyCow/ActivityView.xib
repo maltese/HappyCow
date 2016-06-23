@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ActivityView" customModule="HappyCow" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="hVb-cN-pb1">
+                    <rect key="frame" x="282" y="281" width="37" height="37"/>
+                    <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detailed error message" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3JB-Th-Ngn">
+                    <rect key="frame" x="220" y="403" width="160" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Could not do xxx." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ElU-Uh-1FR">
+                    <rect key="frame" x="229" y="374" width="142" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SawCow" translatesAutoresizingMaskIntoConstraints="NO" id="gw9-nA-JV3">
+                    <rect key="frame" x="242" y="141" width="116" height="225"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="225" id="NZC-jw-yzr"/>
+                        <constraint firstAttribute="width" constant="116" id="tfb-nf-kBa"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwZ-zi-Gwy">
+                    <rect key="frame" x="269" y="429" width="63" height="30"/>
+                    <state key="normal" title="Try again"/>
+                    <connections>
+                        <action selector="retry" destination="iN0-l3-epB" eventType="touchUpInside" id="vg3-of-Bna"/>
+                        <action selector="tryAgainButtonTapped" destination="iN0-l3-epB" eventType="touchUpInside" id="oh5-Bq-egX"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="gw9-nA-JV3" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7Qm-Iu-CYf"/>
+                <constraint firstItem="3JB-Th-Ngn" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="AwX-vC-AkS"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3JB-Th-Ngn" secondAttribute="trailing" constant="15" id="CJx-US-cEV"/>
+                <constraint firstItem="ElU-Uh-1FR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="CjE-C7-NmD"/>
+                <constraint firstItem="rwZ-zi-Gwy" firstAttribute="top" secondItem="3JB-Th-Ngn" secondAttribute="bottom" constant="8" id="Cmg-vs-MS4"/>
+                <constraint firstItem="gw9-nA-JV3" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-46.5" id="EEH-PD-TG7"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ElU-Uh-1FR" secondAttribute="trailing" constant="15" id="Ha2-DS-rL1"/>
+                <constraint firstItem="3JB-Th-Ngn" firstAttribute="top" secondItem="ElU-Uh-1FR" secondAttribute="bottom" constant="8" id="JAx-jd-fhf"/>
+                <constraint firstItem="rwZ-zi-Gwy" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="eKs-ZU-O6e"/>
+                <constraint firstItem="3JB-Th-Ngn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="gnP-rX-wBc"/>
+                <constraint firstItem="ElU-Uh-1FR" firstAttribute="top" secondItem="gw9-nA-JV3" secondAttribute="bottom" constant="8" id="iBR-Om-97u"/>
+                <constraint firstItem="ElU-Uh-1FR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jhC-9o-DSt"/>
+                <constraint firstItem="hVb-cN-pb1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jkf-0Y-jgm"/>
+                <constraint firstItem="hVb-cN-pb1" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="wAX-A8-EMG"/>
+            </constraints>
+            <connections>
+                <outlet property="activityIndicatorView" destination="hVb-cN-pb1" id="yh3-09-m4M"/>
+                <outlet property="detailedErrorMessageLabel" destination="3JB-Th-Ngn" id="fy7-Lw-ZDC"/>
+                <outlet property="errorMessageLabel" destination="ElU-Uh-1FR" id="0Xc-dY-wKI"/>
+                <outlet property="imageView" destination="gw9-nA-JV3" id="SNB-cS-Wqf"/>
+                <outlet property="tryAgainButton" destination="rwZ-zi-Gwy" id="iIs-yN-wmB"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="SawCow" width="116" height="225"/>
+    </resources>
+</document>

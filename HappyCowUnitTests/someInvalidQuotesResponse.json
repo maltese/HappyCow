@@ -1,0 +1,13 @@
+{
+    "success":true,
+    "terms":"https:\/\/currencylayer.com\/terms",
+    "privacy":"https:\/\/currencylayer.com\/privacy",
+    "timestamp":1466592374,
+    "source":"USD",
+    "quotes":{
+        "XXXCHF":0.95855,
+        "USDINVALID":0.95855,
+        "USDEUR":"INVALID",
+        "USDCHF":0.982599
+    }
+}

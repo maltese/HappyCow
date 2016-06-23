@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wDH-PC-fap">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Products-->
+        <scene sceneID="WgQ-Ew-sUM">
+            <objects>
+                <tableViewController id="fhn-1n-32P" customClass="ProductsViewController" customModule="HappyCow" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="61" sectionHeaderHeight="18" sectionFooterHeight="18" id="u3A-6i-kEF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="fhn-1n-32P" id="ed6-qJ-9WX"/>
+                            <outlet property="delegate" destination="fhn-1n-32P" id="9EF-km-THQ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Products" id="vcR-GN-PcN">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="Checkout" style="done" id="lhz-M0-m2C">
+                            <connections>
+                                <action selector="checkout" destination="fhn-1n-32P" id="mmr-Kb-1IG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="checkoutBarButtonItem" destination="lhz-M0-m2C" id="Vj7-C3-Dkh"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aYf-R0-60M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="126" y="234"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MbW-A8-ahm">
+            <objects>
+                <navigationController id="wDH-PC-fap" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rLr-g1-4M4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fhn-1n-32P" kind="relationship" relationship="rootViewController" id="fZZ-b0-p5P"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZSb-yG-d4E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-694" y="234"/>
+        </scene>
+    </scenes>
+</document>

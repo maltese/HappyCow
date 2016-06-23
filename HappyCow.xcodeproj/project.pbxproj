@@ -1,0 +1,747 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		071BEB531D1AB7C600F74B54 /* successfulResponse2.json in Resources */ = {isa = PBXBuildFile; fileRef = 071BEB521D1AB7C600F74B54 /* successfulResponse2.json */; };
+		071BEB551D1AD62300F74B54 /* internalServerErrorResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 071BEB541D1AD62300F74B54 /* internalServerErrorResponse.json */; };
+		07AC454E1D1BC9F60069E66F /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07AC454D1D1BC9F60069E66F /* ProductTableViewCell.xib */; };
+		07AC45521D1BF58D0069E66F /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AC45501D1BF58D0069E66F /* CheckoutViewController.swift */; };
+		07AC45531D1BF58D0069E66F /* CheckoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07AC45511D1BF58D0069E66F /* CheckoutViewController.xib */; };
+		07AC45591D1BF91B0069E66F /* CurrencySelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AC45571D1BF91B0069E66F /* CurrencySelectionViewController.swift */; };
+		07AC455C1D1BFD820069E66F /* CurrencySelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07AC455B1D1BFD820069E66F /* CurrencySelectionViewController.xib */; };
+		07AC455F1D1C02750069E66F /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AC455E1D1C02750069E66F /* ActivityView.swift */; };
+		07AC45611D1C02840069E66F /* ActivityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07AC45601D1C02840069E66F /* ActivityView.xib */; };
+		07B7EE4B1D180F920028E1BF /* CurrencyModels.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE8549F41D17214500D0A3DB /* CurrencyModels.xcdatamodeld */; };
+		07B7EE521D1811E70028E1BF /* ExchangeRate+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B7EE501D1811E70028E1BF /* ExchangeRate+CoreDataProperties.swift */; };
+		07B7EE531D1811E70028E1BF /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B7EE511D1811E70028E1BF /* ExchangeRate.swift */; };
+		07C441AA1D1AF97B00DD8BDE /* invalidJSONResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 07C441A81D1AF97B00DD8BDE /* invalidJSONResponse.json */; };
+		07C441AB1D1AF97B00DD8BDE /* errorMessageResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 07C441A91D1AF97B00DD8BDE /* errorMessageResponse.json */; };
+		07C441AD1D1AFBDF00DD8BDE /* someInvalidQuotesResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 07C441AC1D1AFBDF00DD8BDE /* someInvalidQuotesResponse.json */; };
+		07E424161D1920C5008D2CE1 /* CurrencyModels.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE8549F41D17214500D0A3DB /* CurrencyModels.xcdatamodeld */; };
+		07E424171D1920C8008D2CE1 /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B7EE511D1811E70028E1BF /* ExchangeRate.swift */; };
+		07E424181D1920CC008D2CE1 /* ExchangeRate+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B7EE501D1811E70028E1BF /* ExchangeRate+CoreDataProperties.swift */; };
+		07E424191D1920CF008D2CE1 /* CurrencyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4008401D15619400D92275 /* CurrencyController.swift */; };
+		07F4FCCE1D1C409D002E7179 /* ShoppingBasketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F4FCCD1D1C409D002E7179 /* ShoppingBasketTests.swift */; };
+		2B416779B0939039A6E16EFB /* Pods_HappyCow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F6EDE91EE0CBD6EE9FDEB60 /* Pods_HappyCow.framework */; };
+		C3BF2E00DF75CF98AE057356 /* Pods_HappyCowUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341A4826156F69DBCBD654F4 /* Pods_HappyCowUnitTests.framework */; };
+		CE0FDEBC1D169D2000385745 /* successfulResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = CE0FDEBB1D169D2000385745 /* successfulResponse.json */; };
+		CE23CE321D15D50500C532CF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE23CE311D15D50500C532CF /* CFNetwork.framework */; };
+		CE23CE341D15D50E00C532CF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE23CE331D15D50E00C532CF /* CoreData.framework */; };
+		CE23CE361D15D51400C532CF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE23CE351D15D51400C532CF /* Security.framework */; };
+		CE23CE381D15D51A00C532CF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE23CE371D15D51A00C532CF /* MobileCoreServices.framework */; };
+		CE4008101D15600F00D92275 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE40080F1D15600F00D92275 /* AppDelegate.swift */; };
+		CE4008121D15600F00D92275 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4008111D15600F00D92275 /* ProductsViewController.swift */; };
+		CE4008151D15600F00D92275 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4008131D15600F00D92275 /* Main.storyboard */; };
+		CE4008171D15600F00D92275 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4008161D15600F00D92275 /* Assets.xcassets */; };
+		CE40081A1D15600F00D92275 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4008181D15600F00D92275 /* LaunchScreen.storyboard */; };
+		CE4008411D15619400D92275 /* CurrencyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4008401D15619400D92275 /* CurrencyController.swift */; };
+		CE8735BA1D1B2B020053FD90 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8735B91D1B2B020053FD90 /* ProductTableViewCell.swift */; };
+		CE8735BC1D1B2C6A0053FD90 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8735BB1D1B2C6A0053FD90 /* Product.swift */; };
+		CE8735BE1D1B2D8D0053FD90 /* Products.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE8735BD1D1B2D8D0053FD90 /* Products.plist */; };
+		CE8735C01D1B2E590053FD90 /* ProductController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8735BF1D1B2E590053FD90 /* ProductController.swift */; };
+		CE8735C21D1B38140053FD90 /* ProductQuantityPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8735C11D1B38140053FD90 /* ProductQuantityPair.swift */; };
+		CE8735C41D1B38700053FD90 /* ShoppingBasket.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8735C31D1B38700053FD90 /* ShoppingBasket.swift */; };
+		CEA886B81D169AFB006EC311 /* CurrencyControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA886B71D169AFB006EC311 /* CurrencyControllerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		071BEB521D1AB7C600F74B54 /* successfulResponse2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = successfulResponse2.json; sourceTree = "<group>"; };
+		071BEB541D1AD62300F74B54 /* internalServerErrorResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = internalServerErrorResponse.json; sourceTree = "<group>"; };
+		07AC454D1D1BC9F60069E66F /* ProductTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
+		07AC45501D1BF58D0069E66F /* CheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		07AC45511D1BF58D0069E66F /* CheckoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CheckoutViewController.xib; sourceTree = "<group>"; };
+		07AC45571D1BF91B0069E66F /* CurrencySelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencySelectionViewController.swift; sourceTree = "<group>"; };
+		07AC455B1D1BFD820069E66F /* CurrencySelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CurrencySelectionViewController.xib; sourceTree = "<group>"; };
+		07AC455E1D1C02750069E66F /* ActivityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		07AC45601D1C02840069E66F /* ActivityView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityView.xib; sourceTree = "<group>"; };
+		07B7EE501D1811E70028E1BF /* ExchangeRate+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExchangeRate+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		07B7EE511D1811E70028E1BF /* ExchangeRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
+		07C441A81D1AF97B00DD8BDE /* invalidJSONResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = invalidJSONResponse.json; sourceTree = "<group>"; };
+		07C441A91D1AF97B00DD8BDE /* errorMessageResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = errorMessageResponse.json; sourceTree = "<group>"; };
+		07C441AC1D1AFBDF00DD8BDE /* someInvalidQuotesResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = someInvalidQuotesResponse.json; sourceTree = "<group>"; };
+		07F4FCCD1D1C409D002E7179 /* ShoppingBasketTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingBasketTests.swift; sourceTree = "<group>"; };
+		2F6EDE91EE0CBD6EE9FDEB60 /* Pods_HappyCow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HappyCow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		341A4826156F69DBCBD654F4 /* Pods_HappyCowUnitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HappyCowUnitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F241DD68DCD71ED97189AFD /* Pods-HappyCowUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyCowUnitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HappyCowUnitTests/Pods-HappyCowUnitTests.release.xcconfig"; sourceTree = "<group>"; };
+		A2B00DB203618BA4ABB10921 /* Pods-HappyCowUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyCowUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HappyCowUITests/Pods-HappyCowUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AFCAFA9776774985CD17010D /* Pods_HappyCowUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HappyCowUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B19D012F08DA76B3852E250F /* Pods-HappyCowUnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyCowUnitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HappyCowUnitTests/Pods-HappyCowUnitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B3036D688111C147AB9C260F /* Pods-HappyCow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyCow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HappyCow/Pods-HappyCow.debug.xcconfig"; sourceTree = "<group>"; };
+		C4E388432DBE0F47F38A0297 /* Pods-HappyCowTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyCowTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HappyCowTests/Pods-HappyCowTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CE0FDEBB1D169D2000385745 /* successfulResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = successfulResponse.json; sourceTree = "<group>"; };
+		CE23CE311D15D50500C532CF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		CE23CE331D15D50E00C532CF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CE23CE351D15D51400C532CF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CE23CE371D15D51A00C532CF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		CE40080C1D15600F00D92275 /* HappyCow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyCow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE40080F1D15600F00D92275 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE4008111D15600F00D92275 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		CE4008141D15600F00D92275 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE4008161D15600F00D92275 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE4008191D15600F00D92275 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE40081B1D15600F00D92275 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE4008401D15619400D92275 /* CurrencyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyController.swift; sourceTree = "<group>"; };
+		CE8549F51D17214500D0A3DB /* CurrencyModels.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CurrencyModels.xcdatamodel; sourceTree = "<group>"; };
+		CE8735B91D1B2B020053FD90 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		CE8735BB1D1B2C6A0053FD90 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		CE8735BD1D1B2D8D0053FD90 /* Products.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Products.plist; sourceTree = "<group>"; };
+		CE8735BF1D1B2E590053FD90 /* ProductController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductController.swift; sourceTree = "<group>"; };
+		CE8735C11D1B38140053FD90 /* ProductQuantityPair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductQuantityPair.swift; sourceTree = "<group>"; };
+		CE8735C31D1B38700053FD90 /* ShoppingBasket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingBasket.swift; sourceTree = "<group>"; };
+		CEA886AF1D169AE7006EC311 /* HappyCowUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappyCowUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA886B31D169AE7006EC311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA886B71D169AFB006EC311 /* CurrencyControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyControllerTests.swift; sourceTree = "<group>"; };
+		DDE91B9DE9746243C42AD070 /* Pods-HappyCowTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyCowTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HappyCowTests/Pods-HappyCowTests.release.xcconfig"; sourceTree = "<group>"; };
+		F2B11798B7DD040AE6C8C902 /* Pods-HappyCow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyCow.release.xcconfig"; path = "Pods/Target Support Files/Pods-HappyCow/Pods-HappyCow.release.xcconfig"; sourceTree = "<group>"; };
+		F79338D6E106C0FE752E168B /* Pods_HappyCowTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HappyCowTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD8C11C56A7D421A7DA28A7A /* Pods-HappyCowUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HappyCowUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HappyCowUITests/Pods-HappyCowUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE4008091D15600F00D92275 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE23CE381D15D51A00C532CF /* MobileCoreServices.framework in Frameworks */,
+				CE23CE361D15D51400C532CF /* Security.framework in Frameworks */,
+				CE23CE341D15D50E00C532CF /* CoreData.framework in Frameworks */,
+				CE23CE321D15D50500C532CF /* CFNetwork.framework in Frameworks */,
+				2B416779B0939039A6E16EFB /* Pods_HappyCow.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA886AC1D169AE7006EC311 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3BF2E00DF75CF98AE057356 /* Pods_HappyCowUnitTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07AC454F1D1BF5740069E66F /* Checkout View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				07AC45501D1BF58D0069E66F /* CheckoutViewController.swift */,
+				07AC45511D1BF58D0069E66F /* CheckoutViewController.xib */,
+				07AC45541D1BF8C40069E66F /* Currency Selection View Controller */,
+			);
+			name = "Checkout View Controller";
+			sourceTree = "<group>";
+		};
+		07AC45541D1BF8C40069E66F /* Currency Selection View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				07AC45571D1BF91B0069E66F /* CurrencySelectionViewController.swift */,
+				07AC455B1D1BFD820069E66F /* CurrencySelectionViewController.xib */,
+			);
+			name = "Currency Selection View Controller";
+			sourceTree = "<group>";
+		};
+		07AC455D1D1C01B90069E66F /* Reusable Views */ = {
+			isa = PBXGroup;
+			children = (
+				07AC455E1D1C02750069E66F /* ActivityView.swift */,
+				07AC45601D1C02840069E66F /* ActivityView.xib */,
+			);
+			name = "Reusable Views";
+			sourceTree = "<group>";
+		};
+		85A82BCF861E07ACE6FCB0B6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3036D688111C147AB9C260F /* Pods-HappyCow.debug.xcconfig */,
+				F2B11798B7DD040AE6C8C902 /* Pods-HappyCow.release.xcconfig */,
+				C4E388432DBE0F47F38A0297 /* Pods-HappyCowTests.debug.xcconfig */,
+				DDE91B9DE9746243C42AD070 /* Pods-HappyCowTests.release.xcconfig */,
+				A2B00DB203618BA4ABB10921 /* Pods-HappyCowUITests.debug.xcconfig */,
+				FD8C11C56A7D421A7DA28A7A /* Pods-HappyCowUITests.release.xcconfig */,
+				B19D012F08DA76B3852E250F /* Pods-HappyCowUnitTests.debug.xcconfig */,
+				5F241DD68DCD71ED97189AFD /* Pods-HappyCowUnitTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE4008031D15600F00D92275 = {
+			isa = PBXGroup;
+			children = (
+				CE40080E1D15600F00D92275 /* HappyCow */,
+				CEA886B01D169AE7006EC311 /* HappyCowUnitTests */,
+				CE40080D1D15600F00D92275 /* Products */,
+				85A82BCF861E07ACE6FCB0B6 /* Pods */,
+				E8668A942F9CDB9B9C1FB273 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE40080D1D15600F00D92275 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE40080C1D15600F00D92275 /* HappyCow.app */,
+				CEA886AF1D169AE7006EC311 /* HappyCowUnitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE40080E1D15600F00D92275 /* HappyCow */ = {
+			isa = PBXGroup;
+			children = (
+				CE40083D1D15605A00D92275 /* Models */,
+				CE40083E1D15606300D92275 /* Model Controllers */,
+				CE40083F1D15608200D92275 /* Products View Controller */,
+				07AC455D1D1C01B90069E66F /* Reusable Views */,
+				CE40080F1D15600F00D92275 /* AppDelegate.swift */,
+				CE4008131D15600F00D92275 /* Main.storyboard */,
+				CE4008161D15600F00D92275 /* Assets.xcassets */,
+				CE4008181D15600F00D92275 /* LaunchScreen.storyboard */,
+				CE40081B1D15600F00D92275 /* Info.plist */,
+			);
+			path = HappyCow;
+			sourceTree = "<group>";
+		};
+		CE40083D1D15605A00D92275 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE8735BD1D1B2D8D0053FD90 /* Products.plist */,
+				CE8735BB1D1B2C6A0053FD90 /* Product.swift */,
+				CE8735C11D1B38140053FD90 /* ProductQuantityPair.swift */,
+				CE8735C31D1B38700053FD90 /* ShoppingBasket.swift */,
+				CE8549F41D17214500D0A3DB /* CurrencyModels.xcdatamodeld */,
+				07B7EE511D1811E70028E1BF /* ExchangeRate.swift */,
+				07B7EE501D1811E70028E1BF /* ExchangeRate+CoreDataProperties.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		CE40083E1D15606300D92275 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE8735BF1D1B2E590053FD90 /* ProductController.swift */,
+				CE4008401D15619400D92275 /* CurrencyController.swift */,
+			);
+			name = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		CE40083F1D15608200D92275 /* Products View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE4008111D15600F00D92275 /* ProductsViewController.swift */,
+				CE8735B91D1B2B020053FD90 /* ProductTableViewCell.swift */,
+				07AC454D1D1BC9F60069E66F /* ProductTableViewCell.xib */,
+				07AC454F1D1BF5740069E66F /* Checkout View Controller */,
+			);
+			name = "Products View Controller";
+			sourceTree = "<group>";
+		};
+		CEA886B01D169AE7006EC311 /* HappyCowUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEA886B71D169AFB006EC311 /* CurrencyControllerTests.swift */,
+				CE0FDEBB1D169D2000385745 /* successfulResponse.json */,
+				071BEB521D1AB7C600F74B54 /* successfulResponse2.json */,
+				071BEB541D1AD62300F74B54 /* internalServerErrorResponse.json */,
+				07C441A81D1AF97B00DD8BDE /* invalidJSONResponse.json */,
+				07C441A91D1AF97B00DD8BDE /* errorMessageResponse.json */,
+				07C441AC1D1AFBDF00DD8BDE /* someInvalidQuotesResponse.json */,
+				07F4FCCD1D1C409D002E7179 /* ShoppingBasketTests.swift */,
+				CEA886B31D169AE7006EC311 /* Info.plist */,
+			);
+			path = HappyCowUnitTests;
+			sourceTree = "<group>";
+		};
+		E8668A942F9CDB9B9C1FB273 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE23CE371D15D51A00C532CF /* MobileCoreServices.framework */,
+				CE23CE351D15D51400C532CF /* Security.framework */,
+				CE23CE331D15D50E00C532CF /* CoreData.framework */,
+				CE23CE311D15D50500C532CF /* CFNetwork.framework */,
+				2F6EDE91EE0CBD6EE9FDEB60 /* Pods_HappyCow.framework */,
+				F79338D6E106C0FE752E168B /* Pods_HappyCowTests.framework */,
+				AFCAFA9776774985CD17010D /* Pods_HappyCowUITests.framework */,
+				341A4826156F69DBCBD654F4 /* Pods_HappyCowUnitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE40080B1D15600F00D92275 /* HappyCow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE4008341D15600F00D92275 /* Build configuration list for PBXNativeTarget "HappyCow" */;
+			buildPhases = (
+				7024B1045664DD67BC4194D2 /* [CP] Check Pods Manifest.lock */,
+				CE4008081D15600F00D92275 /* Sources */,
+				CE4008091D15600F00D92275 /* Frameworks */,
+				CE40080A1D15600F00D92275 /* Resources */,
+				D539702F715A0C4DACA185A2 /* [CP] Embed Pods Frameworks */,
+				849AAE305B7D0787F3FFD39A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HappyCow;
+			productName = HappyCow;
+			productReference = CE40080C1D15600F00D92275 /* HappyCow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEA886AE1D169AE7006EC311 /* HappyCowUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEA886B41D169AE7006EC311 /* Build configuration list for PBXNativeTarget "HappyCowUnitTests" */;
+			buildPhases = (
+				812655EAB0AF9ECD2979516B /* [CP] Check Pods Manifest.lock */,
+				CEA886AB1D169AE7006EC311 /* Sources */,
+				CEA886AC1D169AE7006EC311 /* Frameworks */,
+				CEA886AD1D169AE7006EC311 /* Resources */,
+				061C5EB87F3738010ADEB726 /* [CP] Embed Pods Frameworks */,
+				9E05B22F31645829D11B498F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HappyCowUnitTests;
+			productName = HappyCowUnitTests;
+			productReference = CEA886AF1D169AE7006EC311 /* HappyCowUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE4008041D15600F00D92275 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Matteo Cortonesi";
+				TargetAttributes = {
+					CE40080B1D15600F00D92275 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 67DPUQ2247;
+					};
+					CEA886AE1D169AE7006EC311 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = CE4008071D15600F00D92275 /* Build configuration list for PBXProject "HappyCow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE4008031D15600F00D92275;
+			productRefGroup = CE40080D1D15600F00D92275 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE40080B1D15600F00D92275 /* HappyCow */,
+				CEA886AE1D169AE7006EC311 /* HappyCowUnitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE40080A1D15600F00D92275 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8735BE1D1B2D8D0053FD90 /* Products.plist in Resources */,
+				CE40081A1D15600F00D92275 /* LaunchScreen.storyboard in Resources */,
+				07AC455C1D1BFD820069E66F /* CurrencySelectionViewController.xib in Resources */,
+				07AC454E1D1BC9F60069E66F /* ProductTableViewCell.xib in Resources */,
+				CE4008171D15600F00D92275 /* Assets.xcassets in Resources */,
+				07AC45531D1BF58D0069E66F /* CheckoutViewController.xib in Resources */,
+				CE4008151D15600F00D92275 /* Main.storyboard in Resources */,
+				07AC45611D1C02840069E66F /* ActivityView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA886AD1D169AE7006EC311 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07C441AA1D1AF97B00DD8BDE /* invalidJSONResponse.json in Resources */,
+				CE0FDEBC1D169D2000385745 /* successfulResponse.json in Resources */,
+				07C441AD1D1AFBDF00DD8BDE /* someInvalidQuotesResponse.json in Resources */,
+				071BEB531D1AB7C600F74B54 /* successfulResponse2.json in Resources */,
+				071BEB551D1AD62300F74B54 /* internalServerErrorResponse.json in Resources */,
+				07C441AB1D1AF97B00DD8BDE /* errorMessageResponse.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		061C5EB87F3738010ADEB726 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HappyCowUnitTests/Pods-HappyCowUnitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7024B1045664DD67BC4194D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		812655EAB0AF9ECD2979516B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		849AAE305B7D0787F3FFD39A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HappyCow/Pods-HappyCow-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E05B22F31645829D11B498F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HappyCowUnitTests/Pods-HappyCowUnitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D539702F715A0C4DACA185A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HappyCow/Pods-HappyCow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE4008081D15600F00D92275 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4008121D15600F00D92275 /* ProductsViewController.swift in Sources */,
+				CE8735C01D1B2E590053FD90 /* ProductController.swift in Sources */,
+				CE8735C21D1B38140053FD90 /* ProductQuantityPair.swift in Sources */,
+				07AC455F1D1C02750069E66F /* ActivityView.swift in Sources */,
+				CE8735BC1D1B2C6A0053FD90 /* Product.swift in Sources */,
+				07AC45521D1BF58D0069E66F /* CheckoutViewController.swift in Sources */,
+				07B7EE521D1811E70028E1BF /* ExchangeRate+CoreDataProperties.swift in Sources */,
+				CE8735BA1D1B2B020053FD90 /* ProductTableViewCell.swift in Sources */,
+				CE4008101D15600F00D92275 /* AppDelegate.swift in Sources */,
+				07B7EE4B1D180F920028E1BF /* CurrencyModels.xcdatamodeld in Sources */,
+				CE8735C41D1B38700053FD90 /* ShoppingBasket.swift in Sources */,
+				07B7EE531D1811E70028E1BF /* ExchangeRate.swift in Sources */,
+				07AC45591D1BF91B0069E66F /* CurrencySelectionViewController.swift in Sources */,
+				CE4008411D15619400D92275 /* CurrencyController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEA886AB1D169AE7006EC311 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07E424161D1920C5008D2CE1 /* CurrencyModels.xcdatamodeld in Sources */,
+				07F4FCCE1D1C409D002E7179 /* ShoppingBasketTests.swift in Sources */,
+				07E424171D1920C8008D2CE1 /* ExchangeRate.swift in Sources */,
+				07E424191D1920CF008D2CE1 /* CurrencyController.swift in Sources */,
+				07E424181D1920CC008D2CE1 /* ExchangeRate+CoreDataProperties.swift in Sources */,
+				CEA886B81D169AFB006EC311 /* CurrencyControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE4008131D15600F00D92275 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE4008141D15600F00D92275 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE4008181D15600F00D92275 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE4008191D15600F00D92275 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE4008321D15600F00D92275 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE4008331D15600F00D92275 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE4008351D15600F00D92275 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3036D688111C147AB9C260F /* Pods-HappyCow.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = HappyCow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"ISO8601DateFormatterValueTransformer\"",
+					"-framework",
+					"\"RKValueTransformers\"",
+					"-framework",
+					"\"RestKit\"",
+					"-framework",
+					"\"SOCKit\"",
+					"-framework",
+					"\"TransitionKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ecurex.HappyCow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CE4008361D15600F00D92275 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2B11798B7DD040AE6C8C902 /* Pods-HappyCow.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = HappyCow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"ISO8601DateFormatterValueTransformer\"",
+					"-framework",
+					"\"RKValueTransformers\"",
+					"-framework",
+					"\"RestKit\"",
+					"-framework",
+					"\"SOCKit\"",
+					"-framework",
+					"\"TransitionKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ecurex.HappyCow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CEA886B51D169AE7006EC311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B19D012F08DA76B3852E250F /* Pods-HappyCowUnitTests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = HappyCowUnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ecurex.HappyCowUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CEA886B61D169AE7006EC311 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F241DD68DCD71ED97189AFD /* Pods-HappyCowUnitTests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = HappyCowUnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ecurex.HappyCowUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE4008071D15600F00D92275 /* Build configuration list for PBXProject "HappyCow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE4008321D15600F00D92275 /* Debug */,
+				CE4008331D15600F00D92275 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE4008341D15600F00D92275 /* Build configuration list for PBXNativeTarget "HappyCow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE4008351D15600F00D92275 /* Debug */,
+				CE4008361D15600F00D92275 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEA886B41D169AE7006EC311 /* Build configuration list for PBXNativeTarget "HappyCowUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA886B51D169AE7006EC311 /* Debug */,
+				CEA886B61D169AE7006EC311 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE8549F41D17214500D0A3DB /* CurrencyModels.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE8549F51D17214500D0A3DB /* CurrencyModels.xcdatamodel */,
+			);
+			currentVersion = CE8549F51D17214500D0A3DB /* CurrencyModels.xcdatamodel */;
+			name = CurrencyModels.xcdatamodeld;
+			path = HappyCowUnitTests/CurrencyModels.xcdatamodeld;
+			sourceTree = SOURCE_ROOT;
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CE4008041D15600F00D92275 /* Project object */;
+}

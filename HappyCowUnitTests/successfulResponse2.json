@@ -1,0 +1,12 @@
+{
+    "success":true,
+    "terms":"https:\/\/currencylayer.com\/terms",
+    "privacy":"https:\/\/currencylayer.com\/privacy",
+    "timestamp":1466592374,
+    "source":"USD",
+    "quotes":{
+        "USDCHF":0.97523,
+        "USDEUR":0.72358,
+        "USDPLN":3.73257
+    }
+}
